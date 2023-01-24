@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integral Salud</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <a href="../index.html"><img class="logo" src="../img/logo-IS.png" alt="Logo Integral Salud"></a>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="equipo.html">Profesionales</a></li>
+                <li><a href="../index.html#anclaDonde">Dónde estamos</a></li>
+                <li><a href="notas.html">Notas de interés</a></li>
+            </ul>
+            <a href="contacto.html" class="contactoHeader"><img class="phoneHeader-white" src="../img/phone-byn.svg">
+                Contactanos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+            <h1 class="secundario">Contacto</h1>
+
+            <h2 class="textoDestacado fondoGris"><span class="textoGris">Completa el formulario para </span> enviar tu
+                consulta.</h2>
+
+            <form class="formContacto">
+
+                <div class="datos">
+
+                    <div class="especialista boxInput">
+                        <label for="especialista" autofocus>Especialista</label>
+                        <select id="especialista">
+                            <option disabled selected>Selecciona al especialista</option>
+                            <option value="profUno">María Sara Sánchez</option>
+                            <option value="profDos">Laura López Bernal</option>
+                            <option value="profTres">Frederic Tarnen</option>
+                            <option value="profCuatro">Mima Sánscrito</option>
+                        </select>
+                    </div>
+
+                    <div class="nombre boxInput">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" pattern="[a-zA-Z ]*" id="nombre" placeholder="Escribe tu nombre y apellido">
+                    </div>
+
+                    <div class="email boxInput">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Escribe tu dirección de correo electrónico">
+                    </div>
+
+                    <div class="telefono boxInput">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" pattern="[0-9+]*" id="telefono" placeholder="Ingresa tu número de teléfono">
+                    </div>
+
+                </div>
+
+                <label for="comentario"class="boxInput">Comentario</label>
+                <textarea name="comentario" id="comentario" cols="80" rows="10"
+                    placeholder="Dejanos tu consulta"></textarea>
+
+                <input class="btn btnSend" type="submit">
+            </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <img id="logoBYN" src="../img/logo-IS-byn.png" alt="Logo Integral Salud en grises">
+        
+        <div class="contenedorFooter">
+
+            <div class="footerLinks">
+                <h5>Enlaces rápidos</h5>
+                <a href="equipo.html"><img class="phoneHeader-color" src="../img/phone-color.svg">Contacta a nuestros
+                    profesionales</a>
+                <a href="notas.html"><img class="pencilIcon" src="../img/pencil.svg">Notas de interés</a>
+            </div>
+
+            <div class="footerAddress">
+                <h5>Dónde estamos</h5>
+                <div class="address">
+                    <div>
+                        <img class="locationIcon" src="../img/location-icon.svg">
+                    </div>
+                    <div>
+                        <p class="bold">Av. Julio Argentino Roca 2640</p>
+                        <p>Puerto Madryn</p>
+                        <p>Chubut, Argentina</p>
+                    </div>
+                </div>
+                <a href="https://goo.gl/maps/G1TZ9tgbTAvMASJS9" class="linkMapa" target="_blank"><img class="mapaIcon"
+                        src="../img/mapa.svg">Ver en el mapa</a>
+            </div>
+
+        </div>
+
+        <div class="sign">
+            <p>Diseñada con </p><img src="../img/heart.svg">
+            <p> para ayudarte</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
