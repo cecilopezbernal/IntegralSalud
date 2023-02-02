@@ -16,7 +16,8 @@
     overflow-x: hidden;
 }
 
-.container-fluid, .container{
+.container-fluid,
+.container {
     padding-left: 0;
     padding-right: 0;
 }
@@ -84,6 +85,10 @@ nav ul {
     background-color: #5A5A5A;
 }
 
+.navbar-toggler {
+    border: 0;
+}
+
 /* MAIN */
 
 main {
@@ -93,6 +98,7 @@ main {
     top: 100px;
     margin-bottom: 52px;
     padding-bottom: 52px;
+    overflow-x: hidden;
 }
 
 .fondoGris {
@@ -110,7 +116,11 @@ main {
 
 /* Títulos y subtítulos */
 
-h1, h2, h3, h4.footer, h5 {
+h1,
+h2,
+h3,
+h4.footer,
+h5 {
     font-weight: 600;
 }
 
@@ -126,12 +136,14 @@ h2 {
     margin-bottom: 12px;
 }
 
-h3, h2.notas {
+h3,
+h2.notas {
     font-size: 24px;
     margin: 8px auto 8px 24px;
 }
 
-h4:not(.footer), h3.notas {
+h4:not(.footer),
+h3.notas {
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
@@ -139,7 +151,9 @@ h4:not(.footer), h3.notas {
     margin: 24px auto 0px 24px;
 }
 
-h5, h4.footer, h3.footer {
+h5,
+h4.footer,
+h3.footer {
     font-size: 20px;
     text-align: left;
     margin: 16px 0px 8px 0px;
@@ -238,6 +252,7 @@ h3.pagTerciaria {
     box-sizing: border-box;
     scrollbar-width: none;
     align-items: flex-start;
+    padding-right: 20px;
 }
 
 /*Webkit*/
@@ -291,12 +306,12 @@ h3.pagTerciaria {
     height: 440px;
 }
 
-.mapa{
-    grid-area:mapa;
+.mapa {
+    grid-area: mapa;
 }
 
 .direccion {
-    grid-area:direccion;
+    grid-area: direccion;
     margin: 5% 5%;
     display: flex;
     flex-direction: row;
@@ -314,14 +329,12 @@ h3.pagTerciaria {
 
 .location-icon {
     height: 24px;
-    /* margin-top: 50px; */
-    /* margin-left: 60px; */
     margin-right: 10px;
 }
 
 .btnMapa {
     margin: 57px auto;
-    grid-area:btnMapa;
+    grid-area: btnMapa;
 
 }
 
@@ -339,7 +352,28 @@ h3.pagTerciaria {
     align-items: baseline;
 }
 
-.titleSection a {
+.notas{
+    display: grid;
+    grid-template-areas:
+        "titleNotas enlaceNotas"
+        "cardNotas cardNotas";
+    grid-template-columns: 85% 15%;
+    align-items: baseline;
+}
+
+.titleNotas {
+    grid-area: titleNotas;
+}
+
+.enlaceNotas {
+    grid-area: enlaceNotas;
+}
+
+.cardNotas {
+    grid-area: cardNotas;
+}
+
+.enlaceNotas a {
     font-size: 16px;
     line-height: 20px;
     color: #219ED3;
@@ -379,7 +413,7 @@ footer {
 .footerLinks {
     display: flex;
     flex-direction: column;
-    grid-area:footerLinks;
+    grid-area: footerLinks;
 }
 
 .contenedorFooter img {
@@ -415,7 +449,7 @@ footer {
 .footerAddress {
     display: flex;
     flex-direction: column;
-    grid-area:footerAddress;
+    grid-area: footerAddress;
 }
 
 /* Páginas secundaria - NOSOTROS, EQUIPO y NOTAS*/
@@ -491,7 +525,6 @@ footer {
     justify-content: center;
     align-content: center;
     margin: 16px 0px 32px 24px;
-    /* line-height: 20px; */
 }
 
 .cardHorizontal p {
@@ -620,7 +653,7 @@ textarea {
     margin: 0px auto;
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
     .navbar-collapse {
         background-color: #E9E9E9;
         border-bottom-left-radius: 10px;
@@ -628,20 +661,19 @@ textarea {
     }
 
     .ms-4 {
-        margin-left:0px !important;
+        margin-left: 0px !important;
     }
 
     .navbar-nav {
         padding-left: 10%;
     }
 
-    .navbar{
+    .navbar {
         padding-bottom: 0;
-
     }
 
-    .navbar-toggler{
-        margin-right: 10%;
+    .navbar-toggler {
+        margin-right: 3%;
     }
 
     .contactoHeader {
@@ -651,7 +683,7 @@ textarea {
 
     .logo {
         height: 45px;
-        margin-left:10% ;
+        margin-left: 10%;
         /* width: 130px; */
     }
 
@@ -664,12 +696,17 @@ textarea {
         grid-template-rows: auto;
         grid-template-columns: 100%;
     }
+
+    .direccion p {
+        margin: 2% 0%;
+    }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     h1.index {
         font-size: 44px;
     }
+
     .introContacto {
         font-size: 30px;
         line-height: 32px;
@@ -680,9 +717,13 @@ textarea {
     h1.index {
         font-size: 40px;
     }
+
+    .container-fluid, .container {
+        overflow: hidden;
+    }
 }
 
-@media  (min-width:576px) and (max-width:767px) {
+@media (min-width:576px) and (max-width:767px) {
     h1.index {
         font-size: 36px;
     }
@@ -694,6 +735,10 @@ textarea {
     .introContacto {
         font-size: 28px;
         line-height: 40px;
+    }
+
+    .direccion p {
+        font-size: 20px;
     }
 }
 
@@ -708,18 +753,26 @@ textarea {
         margin-left: 4%;
     }
 
-    .footerAddress, .footerLinks, .sign{
+    .footerAddress,
+    .footerLinks,
+    .sign {
         margin-top: 18px;
+    }
+
+    nav {
+        margin-top: 20px;
     }
 }
 
-@media  (max-width:575px) {
+@media (max-width:575px) {
     .introContacto {
         font-size: 24px;
         line-height: 30px;
     }
 
-    h1.index, h2 {
+    h1.index,
+    h2,
+    h1.secundario {
         font-size: 30px;
     }
 
@@ -727,14 +780,38 @@ textarea {
         margin-left: -12%;
         width: 100vw;
     }
-    .card{
+
+    .card {
         margin-left: 12px;
     }
 
-    .titleSection h2{
+    .titleSection h2 {
         width: 100vw;
         margin-top: 24px;
         text-align: center;
+    }
+
+    .direccion p {
+        font-size: 18px;
+        margin: 0%;
+    }
+
+    .notas{
+        display: grid;
+        grid-template-areas:
+            "titleNotas titleNotas"
+            "cardNotas cardNotas"
+            "none enlaceNotas";
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto;
+    }
+
+    .notas .contenedorCard {
+        margin-bottom: 0%;
+    }
+
+    .enlaceNotas {
+        margin-bottom: 52px;
     }
 
 }
