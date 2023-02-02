@@ -670,6 +670,7 @@ textarea {
 
     .navbar {
         padding-bottom: 0;
+        margin-bottom: 0px;
     }
 
     .navbar-toggler {
@@ -684,7 +685,6 @@ textarea {
     .logo {
         height: 45px;
         margin-left: 10%;
-        /* width: 130px; */
     }
 
     .contenedorMapa {
@@ -718,9 +718,6 @@ textarea {
         font-size: 40px;
     }
 
-    .container-fluid, .container {
-        overflow-x: hidden;
-    }
 }
 
 @media (min-width:576px) and (max-width:767px) {
@@ -763,6 +760,11 @@ textarea {
         margin-top: 15px;
         margin-bottom: 10px;
     }
+
+    main {
+        top: 80px;
+        padding-bottom: 32px;
+    }
 }
 
 @media (max-width:575px) {
@@ -779,6 +781,7 @@ textarea {
 
     .contenedorCard {
         margin-left: -12%;
+        padding-right: 90px;
         width: 100vw;
     }
 
@@ -803,7 +806,7 @@ textarea {
             "titleNotas titleNotas"
             "cardNotas cardNotas"
             "none enlaceNotas";
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 75% 25%;
         grid-template-rows: auto;
     }
 
@@ -813,6 +816,12 @@ textarea {
 
     .enlaceNotas {
         margin-bottom: 52px;
+        margin-top: 20px;
+    }
+
+    main {
+        top: 60px;
+        padding-bottom: 12px;
     }
 
 }
