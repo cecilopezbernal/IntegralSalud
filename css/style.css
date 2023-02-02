@@ -719,7 +719,7 @@ textarea {
     }
 
     .container-fluid, .container {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -760,7 +760,8 @@ textarea {
     }
 
     nav {
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 }
 
