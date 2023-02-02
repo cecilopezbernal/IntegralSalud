@@ -6,36 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integral Salud</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Propio -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 
-<body class="body">
+<body class="container-fluid body">
 
-    <header class="header">
-        <a href="../index.html"><img class="logo" src="../img/logo-IS.png" alt="Logo Integral Salud"></a>
-        <nav>
-            <ul>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
-                <li><a href="equipo.html">Profesionales</a></li>
-                <li><a href="../index.html#anclaDonde">Dónde estamos</a></li>
-                <li><a href="notas.html">Notas de interés</a></li>
-            </ul>
-            <a href="contacto.html" class="contactoHeader"><img class="phoneHeader-white" src="../img/phone-byn.svg">
-                Contactanos</a>
+    <header class="container-fluid header">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-IS.png"
+                        alt="Logo Integral Salud"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#anclaDonde">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas.html">Notas</a>
+                        </li>
+                    </ul>
+                    <a href="contacto.html" class="contactoHeader"><img class="phoneHeader-white"
+                            src="../img/phone-byn.svg">
+                        Contactanos</a>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container-fluid">
         <section>
             <h1 class="secundario">Nuestros servicios</h1>
 
-            <div class="fondoBlanco boxBlanco">
+            <div class="fondoBlanco boxBlanco container-fluid">
                 <div class="contenedorBlanco">
-                    <div class="bloque">
-                        <img src="../img/top-view-kids-playing-with-colorful-game.jpg" class="fotoMitadDer"
-                            alt="Niños jugando con juguetes de madera">
-                        <div>
+                    <div class="bloque row">
+                        <img src="../img/top-view-kids-playing-with-colorful-game.jpg" class="col-xl-6 col-lg-5 col-md-12 imgExtra" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" alt="Niños jugando con juguetes de madera">
+                        <div class="col-xl-6 col-lg-7 col-md-12">
                             <h2 class="textoDestacado">Pediatría, nutrición, psicología y puericultura. <span
                                     class="textoGris">Todo en un solo lugar.</span></h2>
                             <p class="justificado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -64,8 +87,8 @@
                             ultricies eleifend. Praesent rhoncus ex quis tempus ornare. Nunc convallis rutrum ipsum
                             sed dapibus.</p>
                     </div>
-                    <div class="bloque">
-                        <div>
+                    <div class="bloque row">
+                        <div class="col-xl-6 col-lg-7 col-md-12">
                             <p class="justificado">Fusce porttitor risus tellus, eu blandit dolor interdum vel.
                                 Suspendisse in nisi pretium, vulputate mauris et, scelerisque enim. Vivamus ac
                                 vulputate sem, non mattis risus. Mauris auctor odio ut blandit finibus. Maecenas
@@ -79,7 +102,7 @@
                                 vestibulum velit in augue hendrerit, id tincidunt nibh congue. Pellentesque sit amet
                                 eros vel justo semper volutpat.</p>
                         </div>
-                        <img src="../img/kid-in-pediatrics-office.jpg" alt="niña con estetoscopio" class="fotoMitadIzq">
+                        <img src="../img/kid-in-pediatrics-office.jpg" alt="niña con estetoscopio" class="col-xl-6 col-lg-5 col-md-12 imgExtra" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800" >
                     </div>
                     <a class="btn btnBig btnContactar" href="contacto.html">Contactar</a>
                 </div>
@@ -124,7 +147,11 @@
             <p> para ayudarte</p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integral Salud</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS Propio -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
@@ -13,16 +16,35 @@
 <body class="body">
 
     <header class="header">
-        <a href="../index.html"><img class="logo" src="../img/logo-IS.png" alt="Logo Integral Salud"></a>
-        <nav>
-            <ul>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
-                <li><a href="equipo.html">Profesionales</a></li>
-                <li><a href="../index.html#anclaDonde">Dónde estamos</a></li>
-                <li><a href="notas.html">Notas de interés</a></li>
-            </ul>
-            <a href="contacto.html" class="contactoHeader"><img class="phoneHeader-white" src="../img/phone-byn.svg">
-                Contactanos</a>
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-IS.png"
+                        alt="Logo Integral Salud"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#anclaDonde">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas.html">Notas</a>
+                        </li>
+                    </ul>
+                    <a href="contacto.html" class="contactoHeader"><img class="phoneHeader-white"
+                            src="../img/phone-byn.svg">
+                        Contactanos</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -33,8 +55,8 @@
                 <div class="contenedorBlanco">
                     <div class="cardHorizontal">
                         <div class="cardInfo">
-                            <h4>Infancia</h4>
-                            <h3>Infancia segura: cómo crearla</h3>
+                            <h3 class="notas">Infancia</h3>
+                            <h2 class="notas">Infancia segura: cómo crearla</h2>
                             <div class="infoNota1">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas autem molestiae
                                     dicta consectetur nobis, vitae debitis explicabo quod laudantium aliquid reiciendis
@@ -50,14 +72,13 @@
                             </div>
                         </div>
                         <div class="cardFotoNota">
-                            <img src="../img/girl-looking-through-her-painted-hands.png"
-                                alt="niña mirando através de sus manos">
+                            <img src="../img/girl-looking-through-her-painted-hands.png" class="img-fluid" alt="niña mirando através de sus manos">
                         </div>
                     </div>
                     <div class="cardHorizontal">
                         <div class="cardInfo">
-                            <h4>Aprendizaje</h4>
-                            <h3>Sus primeros pasos</h3>
+                            <h3 class="notas">Aprendizaje</h3>
+                            <h2 class="notas">Sus primeros pasos</h2>
                             <div class="infoNota2">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, minima
                                     repudiandae. Aliquid sint odit aut doloremque consequuntur ratione maxime sapiente
@@ -71,7 +92,7 @@
                                     mollitia pariatur explicabo, animi alias optio quia perspiciatis beatae.</p>
                             </div>
                             <div class="botonera">
-                                <a class="btn btnCard nota2" href="">Leer más</a>
+                                <a class="btn btnCard nota2" href="primerospasos.html">Leer más</a>
                             </div>
                         </div>
                         <div class="cardFotoNota">
@@ -80,8 +101,8 @@
                     </div>
                     <div class="cardHorizontal">
                         <div class="cardInfo">
-                            <h4>Padres</h4>
-                            <h3>El método Pickler y el movimiento libre</h3>
+                            <h3 class="notas">Padres</h3>
+                            <h2 class="notas">El método Pickler y el movimiento libre</h2>
                             <div class="infoNota3">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, quia? Ex fugit
                                     saepe quisquam voluptate sapiente laudantium. Non at sed temporibus maxime suscipit
@@ -91,7 +112,7 @@
                                     Minus laudantium adipisci eius magnam explicabo!</p>
                             </div>
                             <div class="botonera">
-                                <a class="btn btnCard nota3" href="">Leer más</a>
+                                <a class="btn btnCard nota3" href="metodopickler.html">Leer más</a>
                             </div>
                         </div>
                         <div class="cardFotoNota">
@@ -109,14 +130,14 @@
         <div class="contenedorFooter">
 
             <div class="footerLinks">
-                <h5>Enlaces rápidos</h5>
+                <h4 class="footer">Enlaces rápidos</h4>
                 <a href="equipo.html"><img class="phoneHeader-color" src="../img/phone-color.svg">Contacta a nuestros
                     profesionales</a>
                 <a href="notas.html"><img class="pencilIcon" src="../img/pencil.svg">Notas de interés</a>
             </div>
 
             <div class="footerAddress">
-                <h5>Dónde estamos</h5>
+                <h4 class="footer">Dónde estamos</h4>
                 <div class="address">
                     <div>
                         <img class="locationIcon" src="../img/location-icon.svg">
@@ -138,7 +159,7 @@
             <p> para ayudarte</p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
