@@ -331,7 +331,6 @@ h3.pagTerciaria {
 .btnMapa {
     margin: 57px auto;
     grid-area: btnMapa;
-
 }
 
 .ancla {
@@ -348,7 +347,7 @@ h3.pagTerciaria {
     align-items: baseline;
 }
 
-.notas{
+.notas {
     display: grid;
     grid-template-areas:
         "titleNotas enlaceNotas"
@@ -694,6 +693,10 @@ textarea {
         margin: 2% 0%;
     }
 
+    .btnMapa {
+        margin: 24px auto;
+    }
+
     .ancla {
         position: relative;
         top: -55px;
@@ -798,7 +801,7 @@ textarea {
         margin: 0%;
     }
 
-    .notas{
+    .notas {
         display: grid;
         grid-template-areas:
             "titleNotas titleNotas"
@@ -814,7 +817,7 @@ textarea {
 
     .enlaceNotas {
         margin-bottom: 52px;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     main {
